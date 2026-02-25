@@ -124,6 +124,12 @@ img.poster {
 
 }
 
+img.play-btn-img {
+    height: 86px;
+}
+/* img.play-btn-img {
+    max-width: 187px;
+} */
 
 .songPoster {
     display: flex;
