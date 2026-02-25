@@ -8,7 +8,7 @@ body {
     background: #503838;
     color: white;
     font-family: system-ui;
-    /* cursor: none; */
+    cursor: none;
     height: 100vh;
 }
 
