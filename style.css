@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #503838;
+    color: white;
+    font-family: system-ui;
+    /* cursor: none; */
+}
+
+.cursor {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: aliceblue;
+    position: absolute;
+    /* transition: all linear .2s; */
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 18px 40px 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0000004d;
+    transition: 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+
+/* music player css starts */
+
+
+button.play-btn {
+    background: transparent;
+    height: 38px;
+    width: 38px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+
+.playlist-section {
+    padding: 145px 100px 0;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 800;
+    padding-bottom: 45px;
+
+}
+
+img.poster {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.song {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.songDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px 10px;
+    padding-bottom: 100px;
+}
+
+.song.active {
+    scale: 1.1;
+    border: 1px solid;
+    padding: 6px;
+    border-radius: 10px;
+    transition: .4s ease;
+
+}
+
+
+.songPoster {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 80px;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+
+.songPoster .poster {
+    height: 400px;
+    width: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+h3.head {
+    text-align: center;
+    font-size: 32px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
