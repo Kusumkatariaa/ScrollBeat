@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     color: white;
     font-family: system-ui;
     /* cursor: none; */
+    height: 100vh;
 }
 
 .cursor {
@@ -17,8 +17,10 @@ body {
     width: 16px;
     border-radius: 50%;
     background: aliceblue;
-    position: absolute;
-    /* transition: all linear .2s; */
+    position: fixed;   
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }
 
 .song {
@@ -102,6 +104,7 @@ img.poster {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 61%;
 }
 
 .playlist {
