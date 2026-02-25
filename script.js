@@ -6,14 +6,11 @@ let heroPoster = document.querySelector('.hero .poster');
 let heroTitle = document.querySelector('.hero .songDetails h4');
 let heroDesc = document.querySelector('.hero .songDetails p');
 
-// body.addEventListener('mousemove', (dets) => {
-//     cursor.style.left = dets.x + 'px';
-//     cursor.style.top = dets.y + 'px';
-// })
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
+body.addEventListener('mousemove', (dets) => {
+    cursor.style.left = dets.x + 'px';
+    cursor.style.top = dets.y + 'px';
+})
+
 
 body.addEventListener('wheel', (dets) => {
     if (dets.deltaY > 0) {
