@@ -129,7 +129,7 @@ img.poster {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-top: 80px;
+    padding-top: 60px;
     flex-direction: column;
     padding-bottom: 150px;
 }
