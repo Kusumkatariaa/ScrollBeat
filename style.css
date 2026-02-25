@@ -20,6 +20,14 @@ body {
     position: absolute;
     /* transition: all linear .2s; */
 }
+
+.song {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 32%;
+    justify-content: flex-start;
+}
 .hero {
     display: none;
 }
@@ -88,11 +96,7 @@ img.poster {
     border-radius: 8px;
 }
 
-.song {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+
 
 .songDetails {
     display: flex;
