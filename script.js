@@ -1,8 +1,10 @@
 let nav = document.querySelector('nav');
-
 let body = document.body;
-
 let cursor = document.querySelector('.cursor');
+let hero = document.querySelector('.hero');
+let heroPoster = document.querySelector('.hero .poster');
+let heroTitle = document.querySelector('.hero .songDetails h4');
+let heroDesc = document.querySelector('.hero .songDetails p');
 
 body.addEventListener('mousemove', (dets) => {
     cursor.style.left = dets.x + 'px';
@@ -43,11 +45,26 @@ allSongs.forEach((elem) => {
             allIcon.src = './assets/play.png';
         });
         if (icon.src.includes('play.png')) {
+
             icon.src = './assets/pause.png';
             audio.play();
+
+            const poster = elem.querySelector('.poster').src;
+            const title = elem.querySelector('h4').innerText;
+            const desc = elem.querySelector('p').innerText;
+
+            heroPoster.src = poster;
+            heroTitle.innerText = title;
+            heroDesc.innerText = desc;
+
+            hero.style.display = "block";
+
         } else {
+
             icon.src = './assets/play.png';
             audio.pause();
-        } 
+
+            hero.style.display = "none";
+        }
     })
 }); 

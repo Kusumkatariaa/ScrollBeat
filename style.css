@@ -20,7 +20,9 @@ body {
     position: absolute;
     /* transition: all linear .2s; */
 }
-
+.hero {
+    display: none;
+}
 .navbar {
     position: fixed;
     width: 100%;
